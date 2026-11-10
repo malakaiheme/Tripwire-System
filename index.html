@@ -311,4 +311,25 @@ void loop() {
 
 </body>
 
-</html>
+</html> int pos = 0; //Set a variable for adjusting brightness
+
+void setup() {
+    pinMode(11,OUTPUT);
+}
+
+void loop() {
+    digitalWrite(11, 1);
+    delay(3000);
+    digitalWrite(11, 0);
+    delay(3000);
+  
+    for (pos = 0; pos <= 255; pos += 1){
+     analogWrite(11,pos);
+     delay(100);
+   }
+   for (pos = 255; pos >= 0; pos -= 1){
+     analogWrite(11,pos);
+     delay(100);
+   }
+}
+
