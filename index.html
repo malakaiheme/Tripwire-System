@@ -94,6 +94,44 @@
         carbon footprint.</li>
     </ul>
   </section>
+<h2>Comparative Analysis of Technologies – Trip Wire System</h2>
+
+<table border="1" cellpadding="10"
+style="width:100%; border-collapse:collapse; text-align:left;">
+
+<tr style="background-color:#333; color:rgb(0, 0, 0);">
+<th>Technology</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Sustainability</th>
+</tr>
+
+<tr>
+<td><b>Infrared (IR) Sensor</b></td>
+<td>Affordable, easy to install, and detects objects without physical contact.</td>
+<td>Can be affected by sunlight and environmental conditions.</td>
+<td>Uses little electricity and can be reused.</td>
+</tr>
+
+<tr>
+<td><b>Laser and LDR Sensor</b></td>
+<td>Detects when an object interrupts a beam and provides a clear detection point.</td>
+<td>Requires careful alignment and can be affected by bright light.</td>
+<td>Uses relatively little power and has inexpensive replacement parts.</td>
+</tr>
+
+</table>
+
+<h3>Final Decision</h3>
+
+<p>
+I would choose the infrared sensor system because it is
+affordable, easy to install, and does not require a visible
+laser beam. It is reusable and uses little electricity,
+making it a good option for my trip wire project.
+</p>
+
+  </section>
 
   <section id="bom">
     <h2>Bill of Materials (BoM)</h2>
@@ -311,25 +349,4 @@ void loop() {
 
 </body>
 
-</html> int pos = 0; //Set a variable for adjusting brightness
-
-void setup() {
-    pinMode(11,OUTPUT);
-}
-
-void loop() {
-    digitalWrite(11, 1);
-    delay(3000);
-    digitalWrite(11, 0);
-    delay(3000);
-  
-    for (pos = 0; pos <= 255; pos += 1){
-     analogWrite(11,pos);
-     delay(100);
-   }
-   for (pos = 255; pos >= 0; pos -= 1){
-     analogWrite(11,pos);
-     delay(100);
-   }
-}
-
+</html>
