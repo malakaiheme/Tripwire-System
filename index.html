@@ -1,54 +1,106 @@
 <!DOCTYPE html>
 
+
+
 <html lang="en">
+
+
+
+
 
 
 
 <head>
 
+
+
  <meta charset="UTF-8" />
 
+
+
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
 
  <title>Tripwire System</title>
 
 
 
+
+
+
+
  <!-- Prism.js syntax highlighting -->
+
+
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
 
+
+
  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 
+
+
  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+
+
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
 
 
 
+
+
+
+
  <!-- Includes the stylesheet file styles.css -->
+
+
 
  <link rel="stylesheet" href="styles.css?v=2" />
 
+
+
 </head>
+
+
 
 <script>
 
+
+
  window.addEventListener("beforeprint", () => {
 
-  const proto = document.getElementById("prototypeImage");
-
-  const printHeroImg = document.querySelector("#print-hero img");
 
 
+ const proto = document.getElementById("prototypeImage");
 
-  if (proto && printHeroImg) {
 
-   printHeroImg.src = proto.src;
 
-  }
+ const printHeroImg = document.querySelector("#print-hero img");
+
+
+
+
+
+
+
+ if (proto && printHeroImg) {
+
+
+
+  printHeroImg.src = proto.src;
+
+
+
+ }
+
+
 
  });
+
+
 
 </script>
 
@@ -56,187 +108,377 @@
 
 
 
+
+
+
+
+
+
 <body>
+
+
 
  <!-- Fixed Navigation Menu -->
 
+
+
  <nav id="menu">
 
-  <h3>Menu</h3>
 
-  <ul>
 
-   <li><a href="#top">Title</a></li>
+ <h3>Menu</h3>
 
-   <li><a href="#information">Project Information</a></li>
 
-   <li><a href="#introduction">Introduction</a></li>
 
-   <li><a href="#circuit-diagram">Circuit</a></li>
+ <ul>
 
-   <li><a href="#environment">Environment</a></li>
 
-   <li><a href="#bom">BoM</a></li>
 
-   <li><a href="#prototype">Prototype</a></li>
+  <li><a href="#top">Title</a></li>
 
-   <li><a href="#code">Code</a></li>
 
-   <li><a href="#conclusion">Conclusion</a></li>
 
-   <li><a href="#references">References</a></li>
+  <li><a href="#information">Project Information</a></li>
 
-  </ul>
+
+
+  <li><a href="#introduction">Introduction</a></li>
+
+
+
+  <li><a href="#circuit-diagram">Circuit</a></li>
+
+
+
+  <li><a href="#environment">Environment</a></li>
+
+
+
+  <li><a href="#bom">BoM</a></li>
+
+
+
+  <li><a href="#prototype">Prototype</a></li>
+
+
+
+  <li><a href="#code">Code</a></li>
+
+
+
+  <li><a href="#conclusion">Conclusion</a></li>
+
+
+
+  <li><a href="#references">References</a></li>
+
+
+
+ </ul>
+
+
 
  </nav>
+
+
 
  <button class="print-button" onclick="window.print()" style="position: fixed; bottom: 24px; right: 24px; padding: 10px 16px; background: #2563eb; color: white; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15); font-size: 0.9rem; z-index: 2000;"> Print This Page </button>
 
 
 
+
+
+
+
  <h1 id="top">Tracking Laser System </h1>
+
+
 
 <div id="print-hero">
 
-  <img src="" alt="">
+
+
+ <img src="" alt="">
+
+
 
 </div>
 
 
 
+
+
+
+
  <section id="information">
 
-  <h2>Project Information</h2>
 
-  <p><strong>Course:</strong> TECH 117 (Computer Engineering Technology, Fall 2026)</p>
 
-  <p><strong>Instructor:</strong> Ph.D. Ana Rodrigues</p>
+ <h2>Project Information</h2>
 
-  <p><strong>Team Members:</strong></p>
 
-  <ul>
 
-   <li>Malakai</li>
+ <p><strong>Course:</strong> TECH 117 (Computer Engineering Technology, Fall 2026)</p>
 
-   <li>Ekelem</li>
 
-   <li>Erwin</li>
 
-   <li>Dominique</li>
+ <p><strong>Instructor:</strong> Ph.D. Ana Rodrigues</p>
 
-  </ul>
+
+
+ <p><strong>Team Members:</strong></p>
+
+
+
+ <ul>
+
+
+
+  <li>Malakai</li>
+
+
+
+  <li>Ekelem</li>
+
+
+
+  <li>Erwin</li>
+
+
+
+  <li>Dominique</li>
+
+
+
+ </ul>
+
+
 
  </section>
+
+
+
+
 
 
 
  <section id="introduction">
 
-  <h2>Introduction</h2>
 
-  <p>Homeowners often get little warning when someone enters their property. By the time they notice, they have already lost valuable time to react. </p>
 
-  <p>This project is a laser tripwire system that watches areas around the home, such as doors, windows, and the yard. When a person breaks the beam, the system detects the change and immediately alerts the occupants with the location of the intrusion. This gives people earlier and more accurate awareness of a threat so they can call for help and make safe decisions. 
+ <h2>Introduction</h2>
 
-   </p>
+
+
+ <p>Homeowners often get little warning when someone enters their property. By the time they notice, they have already lost valuable time to react. </p>
+
+
+
+ <p>This project is a laser tripwire system that watches areas around the home, such as doors, windows, and the yard. When a person breaks the beam, the system detects the change and immediately alerts the occupants with the location of the intrusion. This gives people earlier and more accurate awareness of a threat so they can call for help and make safe decisions. 
+
+
+
+  </p>
+
+
 
  <p>We'll measure success by ensuring that the system has a detection rate of at least 90%, by making sure the response time is quick, and by making sure the laser is still and does not move when the system is activated. The system will be tested in a controlled environment to ensure that it meets these criteria.
 
+
+
  </p> 
 
- <p>Some of the problems we will face will include: budget, time, parts, and personal skills. Though, out of these problems, budgeting will be the most troublesome, as it will require us to bring in our own materials such as a camera. The other problems aren't as hard to deal with; we can split the workload amongst ourselves to save time, the majority of the parts are already given to us, and if we are lacking skills to code the script of the tracker, then we can use A.I. to give us examples and explain the work that needs to be done/fixed.</p>
 
-   
+
+ <p>Some of the problems we will face will include: budget, time, parts, and personal skills. However, out of these problems, budgeting will be the most troublesome, as it will require us to bring in our own materials such as a camera. The other problems aren't as hard to deal with; we can split the workload amongst ourselves to save time, the majority of the parts are already given to us, and if we are lacking skills to code the script of the tracker, then we can use A.I. to give us examples and explain the work that needs to be done/fixed.</p>
+
+
+
+  
+
+
 
  </section>
+
+
+
+
 
 
 
  <section id="circuit-diagram">
 
-  <h2>Circuit Diagram</h2>
 
-  <p>The ultrasonic sensor measures distance; the Arduino activates LEDs and the buzzer according to distance
 
-   thresholds.</p>
+ <h2>Circuit Diagram</h2>
 
-  <img src="tracking-laser-system-Arduino.jpg" alt="Arduino tracking laser system">
+
+
+ <p>The ultrasonic sensor measures distance; the Arduino activates LEDs and the buzzer according to distance
+
+
+
+  thresholds.</p>
+
+
+
+ <img src="tracking-laser-system-Arduino.jpg" alt="Arduino tracking laser system">
+
+
 
  </section>
 
 
 
+
+
+
+
  <section id="environment">
 
-  <h2>Environmental Impact Assessment</h2>
 
-  <ul>
 
-   <li><strong>Materials:</strong> The Arduino Uno is RoHS and WEEE compliant, limiting hazardous substances.
+ <h2>Environmental Impact Assessment</h2>
 
-   </li>
 
-   <li><strong>Energy Efficiency:</strong> The circuit draws minimal power (~50 mA at 5V), ideal for USB or
 
-    solar power.</li>
+ <ul>
 
-   <li><strong>Reusability:</strong> All components are modular and reusable, reducing electronic waste.</li>
 
-   <li><strong>Packaging & Shipping:</strong> Ordering all components from a single supplier helps minimize
 
-    carbon footprint.</li>
+  <li><strong>Materials:</strong> The Arduino Uno is RoHS and WEEE compliant, limiting hazardous substances.
 
-  </ul>
+
+
+  </li>
+
+
+
+  <li><strong>Energy Efficiency:</strong> The circuit draws minimal power (~50 mA at 5V), ideal for USB or
+
+
+
+  solar power.</li>
+
+
+
+  <li><strong>Reusability:</strong> All components are modular and reusable, reducing electronic waste.</li>
+
+
+
+  <li><strong>Packaging & Shipping:</strong> Ordering all components from a single supplier helps minimize
+
+
+
+  carbon footprint.</li>
+
+
+
+ </ul>
+
+
 
 <h2>Comparative Analysis of Technologies – Trip Wire System</h2>
 
 
 
+
+
+
+
 <table border="1" cellpadding="10"
+
+
 
 style="width:100%; border-collapse:collapse; text-align:left;">
 
 
 
+
+
+
+
 <tr style="background-color:#333; color:rgb(0, 0, 0);">
+
+
 
 <th>Technology</th>
 
+
+
 <th>Advantages</th>
+
+
 
 <th>Disadvantages</th>
 
+
+
 <th>Sustainability</th>
+
+
 
 </tr>
 
 
 
+
+
+
+
 <tr>
+
+
 
 <td><b>Infrared (IR) Sensor</b></td>
 
+
+
 <td>Affordable, easy to install, and detects objects without physical contact.</td>
+
+
 
 <td>Can be affected by sunlight and environmental conditions.</td>
 
+
+
 <td>Uses little electricity and can be reused.</td>
 
+
+
 </tr>
+
+
+
+
 
 
 
 <tr>
 
+
+
 <td><b>Laser and LDR Sensor</b></td>
+
+
 
 <td>Detects when an object interrupts a beam and provides a clear detection point.</td>
 
+
+
 <td>Requires careful alignment and can be affected by bright light.</td>
+
+
 
 <td>Uses relatively little power and has inexpensive replacement parts.</td>
 
+
+
 </tr>
+
+
+
+
 
 
 
@@ -244,390 +486,785 @@ style="width:100%; border-collapse:collapse; text-align:left;">
 
 
 
+
+
+
+
 <h3>Final Decision</h3>
+
+
+
+
 
 
 
 <p>
 
+
+
 I would choose the laser and LDR sensor because they are the most available for us to obtain and create the final project.
+
+
 
 </p>
 
 
 
+
+
+
+
  </section>
+
+
+
+
 
 
 
  <section id="bom">
 
-  <h2>Bill of Materials (BoM)</h2>
 
-  <table>
 
-   <thead>
+ <h2>Bill of Materials (BoM)</h2>
 
-    <tr>
 
-     <th>Item</th>
 
-     <th>Qty</th>
+ <table>
 
-     <th>Unit Price</th>
 
-     <th>Subtotal</th>
 
-     <th>Source</th>
+  <thead>
 
-    </tr>
 
-   </thead>
 
-   <tbody>
+  <tr>
 
-    <tr>
 
-     <td>Arduino Uno Rev3</td>
 
-     <td>1</td>
+   <th>Item</th>
 
-     <td>$27.60</td>
 
-     <td>$27.60</td>
 
-     <td><a href="https://store-usa.arduino.cc/products/arduino-uno-rev3">Arduino Store</a></td>
+   <th>Qty</th>
 
-    </tr>
 
-    <tr>
 
-     <td>HC-SR04 Ultrasonic Sensor</td>
+   <th>Unit Price</th>
 
-     <td>1</td>
 
-     <td>$3.95</td>
 
-     <td>$3.95</td>
+   <th>Subtotal</th>
 
-     <td><a href="https://www.adafruit.com/product/3942">Adafruit</a></td>
 
-    </tr>
 
-    <tr>
+   <th>Source</th>
 
-     <td>Passive Buzzer</td>
 
-     <td>1</td>
 
-     <td>$0.95</td>
+  </tr>
 
-     <td>$0.95</td>
 
-     <td><a href="https://www.sparkfun.com/passive-buzzer-module.html">SparkFun</a></td>
 
-    </tr>
+  </thead>
 
-    <tr>
 
-     <td>LEDs (Red, Yellow, Green)</td>
 
-     <td>3</td>
+  <tbody>
 
-     <td>$0.20</td>
 
-     <td>$0.60</td>
 
-     <td>Adafruit</td>
+  <tr>
 
-    </tr>
 
-    <tr>
 
-     <td>220 Ω Resistors</td>
+   <td>Arduino Uno Rev3</td>
 
-     <td>3</td>
 
-     <td>$0.03</td>
 
-     <td>$0.09</td>
+   <td>1</td>
 
-     <td>Adafruit</td>
 
-    </tr>
 
-    <tr>
+   <td>$27.60</td>
 
-     <td>Breadboard</td>
 
-     <td>1</td>
 
-     <td>$4.95</td>
+   <td>$27.60</td>
 
-     <td>$4.95</td>
 
-     <td><a href="https://www.adafruit.com/product/64">Adafruit</a></td>
 
-    </tr>
+   <td><a href="https://store-usa.arduino.cc/products/arduino-uno-rev3">Arduino Store</a></td>
 
-    <tr>
 
-     <td>Jumper Wires</td>
 
-     <td>1 set</td>
+  </tr>
 
-     <td>$3.50</td>
 
-     <td>$3.50</td>
 
-     <td><a href="https://www.sparkfun.com/jumper-wires-standard-7-m-m-30-awg-30-pack.html">SparkFun</a>
+  <tr>
 
-     </td>
 
-    </tr>
-     <tr>
 
-     <td>Photoresistor</td>
+   <td>HC-SR04 Ultrasonic Sensor</td>
 
-     <td>1</td>
 
-     <td>$0.10</td>
 
-     <td>$0.10</td>
+   <td>1</td>
 
-     <td><a href="https://www.amazon.ca/Photoresistor-Resistors-Dependent-Resistor-Durable/dp/B09ZTQL935?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3CTOLJ641GFDC">Amazon</a>
 
-     </td>
 
-    </tr>
+   <td>$3.95</td>
 
-   </tbody>
 
-   <tfoot>
 
-    <tr>
+   <td>$3.95</td>
 
-     <td colspan="3">Estimated Total</td>
 
-     <td>$41.74</td>
 
-     <td>—</td>
+   <td><a href="https://www.adafruit.com/product/3942">Adafruit</a></td>
 
-    </tr>
 
-   </tfoot>
 
-  </table>
+  </tr>
+
+
+
+  <tr>
+
+
+
+   <td>Passive Buzzer</td>
+
+
+
+   <td>1</td>
+
+
+
+   <td>$0.95</td>
+
+
+
+   <td>$0.95</td>
+
+
+
+   <td><a href="https://www.sparkfun.com/passive-buzzer-module.html">SparkFun</a></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+   <td>LEDs (Red, Yellow, Green)</td>
+
+
+
+   <td>3</td>
+
+
+
+   <td>$0.20</td>
+
+
+
+   <td>$0.60</td>
+
+
+
+   <td>Adafruit</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+   <td>220 Ω Resistors</td>
+
+
+
+   <td>3</td>
+
+
+
+   <td>$0.03</td>
+
+
+
+   <td>$0.09</td>
+
+
+
+   <td>Adafruit</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+   <td>Breadboard</td>
+
+
+
+   <td>1</td>
+
+
+
+   <td>$4.95</td>
+
+
+
+   <td>$4.95</td>
+
+
+
+   <td><a href="https://www.adafruit.com/product/64">Adafruit</a></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+   <td>Jumper Wires</td>
+
+
+
+   <td>1 set</td>
+
+
+
+   <td>$3.50</td>
+
+
+
+   <td>$3.50</td>
+
+
+
+   <td><a href="https://www.sparkfun.com/jumper-wires-standard-7-m-m-30-awg-30-pack.html">SparkFun</a>
+
+
+
+   </td>
+
+
+
+  </tr>
+
+   <tr>
+
+
+
+   <td>Photoresistor</td>
+
+
+
+   <td>1</td>
+
+
+
+   <td>$0.10</td>
+
+
+
+   <td>$0.10</td>
+
+
+
+   <td><a href="https://www.amazon.ca/Photoresistor-Resistors-Dependent-Resistor-Durable/dp/B09ZTQL935?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3CTOLJ641GFDC">Amazon</a>
+
+
+
+   </td>
+
+
+
+  </tr>
+
+
+
+  </tbody>
+
+
+
+  <tfoot>
+
+
+
+  <tr>
+
+
+
+   <td colspan="3">Estimated Total</td>
+
+
+
+   <td>$41.74</td>
+
+
+
+   <td>—</td>
+
+
+
+  </tr>
+
+
+
+  </tfoot>
+
+
+
+ </table>
+
+
 
  </section>
+
+
+
+
 
 
 
  <section id="prototype">
 
-  <h2>Prototype</h2>
 
-  <p>The following image shows the assembled prototype on a breadboard.</p>
 
-  <img id="prototypeImage" src="prototype.jpg" alt="Tracking laser system prototype">
+ <h2>Prototype</h2>
+
+
+
+ <p>The following image shows the assembled prototype on a breadboard.</p>
+
+
+
+ <img id="prototypeImage" src="prototype.jpg" alt="Tracking laser system prototype">
+
+
 
  </section>
+
+
+
+
 
 
 
  <section id="code">
 
-  <h2>Arduino Code</h2>
 
-  <p>The following Arduino code controls the system, lighting LEDs and activating the buzzer based on distance readings from the HC-SR04 sensor.</p>
+
+ <h2>Arduino Code</h2>
+
+
+
+ <p>The following Arduino code controls the system, lighting LEDs and activating the buzzer based on distance readings from the HC-SR04 sensor.</p>
+
+
 
 <div class="code-container" style="position: relative;">
 
-   <button class="copy-btn" onclick="copyCode()" 
 
-       style="position:absolute; top:8px; right:8px; z-index:10;">
 
-     Copy
-
-   </button>
+  <button class="copy-btn" onclick="copyCode()" 
 
 
 
-   <pre class="line-numbers">
+    style="position:absolute; top:8px; right:8px; z-index:10;">
+
+
+
+   Copy
+
+
+
+  </button>
+
+
+
+
+
+
+
+  <pre class="line-numbers">
+
+
 
  
 
+
+
  <code id="arduinoCode" class="language-cpp">
+
+
 
 // Tracking Laser System (HC-SR04)
 
+
+
 // Author: Ana Rodrigues
+
+
 
 // Oct 2, 2025
 
+
+
 // Object is farther than 50cm: Green LED lights up
+
+
 
 // Object is closer than 50 cm, but more than 10cm away: Yellow LED lights, buzzer plays 300Hz tone
 
-// Object is closer than 10cm: Red LED lights up, buzzer plays 500Hz tone
+
+
+// Object is closer than 10cm: Red LED lights up, buzzer plays a 500 Hz tone
+
+
+
+
 
 
 
 //LED pins
 
+
+
 const int greenLED = 2;
 
+
+
 const int yellowLED = 3;
+
+
 
 const int redLED = 4;
 
 
 
+
+
+
+
 // Ultrasonic sensor pins
 
+
+
 const int trigPin = 9;
+
+
 
 const int echoPin = 10;
 
 
 
+
+
+
+
 // Passive buzzer pin
+
+
 
 const int buzzer = 11;
 
 
 
+
+
+
+
 void setup() {
+
+
 
  pinMode(greenLED, OUTPUT);
 
+
+
  pinMode(yellowLED, OUTPUT);
+
+
 
  pinMode(redLED, OUTPUT);
 
+
+
  pinMode(trigPin, OUTPUT);
+
+
 
  pinMode(echoPin, INPUT);
 
+
+
  Serial.begin(9600);
 
+
+
 }
+
+
+
+
 
 
 
 void loop() {
 
+
+
  // Measure distance
 
+
+
  digitalWrite(trigPin, LOW);
+
+
 
  delayMicroseconds(2);
 
+
+
  digitalWrite(trigPin, HIGH);
+
+
 
  delayMicroseconds(10);
 
+
+
  digitalWrite(trigPin, LOW);
+
+
+
+
 
 
 
  long duration = pulseIn(echoPin, HIGH);
 
+
+
  long distance = duration * 0.034 / 2;
+
+
+
+
 
 
 
  Serial.print("Distance: ");
 
+
+
  Serial.print(distance);
+
+
 
  Serial.println(" cm");
 
+
+
   
+
+
 
  //Error in measurement:
 
+
+
  if (distance <= 0)
 
-  return;
+
+
+ return;
+
+
+
+
 
 
 
  //Too close:
 
+
+
  if (distance <= 10) {
 
-  digitalWrite(greenLED, LOW);
 
-  digitalWrite(yellowLED, LOW);
 
-  digitalWrite(redLED, HIGH);
+ digitalWrite(greenLED, LOW);
 
-  tone(buzzer, 500); // Play 500Hz tone
 
-  return;
+
+ digitalWrite(yellowLED, LOW);
+
+
+
+ digitalWrite(redLED, HIGH);
+
+
+
+ tone(buzzer, 500); // Play 500Hz tone
+
+
+
+ return;
+
+
 
  }
+
+
+
+
 
 
 
  //Midrange:
 
+
+
  if (distance <= 30) {
 
-  digitalWrite(greenLED, LOW);
 
-  digitalWrite(yellowLED, HIGH);
 
-  digitalWrite(redLED, LOW);
+ digitalWrite(greenLED, LOW);
 
-  tone(buzzer, 300); // Play 300Hz tone
 
-  return;
+
+ digitalWrite(yellowLED, HIGH);
+
+
+
+ digitalWrite(redLED, LOW);
+
+
+
+ tone(buzzer, 300); // Play 300Hz tone
+
+
+
+ return;
+
+
 
  }
 
 
 
+
+
+
+
  //Normal status:
+
+
 
  digitalWrite(greenLED, HIGH);
 
+
+
  digitalWrite(yellowLED, LOW);
 
+
+
  digitalWrite(redLED, LOW);
+
+
 
  noTone(buzzer); // stop buzzer
 
 
 
+
+
+
+
  delay(100);
+
+
 
 }
 
-  </code>
+
+
+ </code>
+
+
 
  </pre>
 
 
 
-  <script>
 
-   function copyCode() {
 
-    const code = document.getElementById('arduinoCode').innerText;
 
-    navigator.clipboard.writeText(code).then(() => {
 
-     alert('Code copied to clipboard!');
+ <script>
 
-    });
 
-   }
 
-  </script>
+  function copyCode() {
+
+
+
+  const code = document.getElementById('arduinoCode').innerText;
+
+
+
+  navigator.clipboard.writeText(code).then(() => {
+
+
+
+   alert('Code copied to clipboard!');
+
+
+
+  });
+
+
+
+  }
+
+
+
+ </script>
+
+
 
  </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -637,63 +1274,123 @@ void loop() {
 
  <section id="conclusion">
 
-  <h2>Conclusion</h2>
 
-  <p>The system effectively demonstrates distance-based alerting using Arduino. It’s affordable, educational, and
 
-   sustainable through reusable components.</p>
+ <h2>Conclusion</h2>
+
+
+
+ <p>The system effectively demonstrates distance-based alerting using Arduino. It’s affordable, educational, and
+
+
+
+  sustainable through reusable components.</p>
+
+
 
  </section>
 
 
 
+
+
+
+
  <section id="references">
+
+
 
  <h2>References</h2>
 
 
 
+
+
+
+
  <ul>
 
-  <li>
 
-   Nikki Griffz. (n.d.). 
 
-   <em>DIY: Laser Tripwire Arduino Tutorial.</em> 
-
-   Nikki Griffz. 
-
-   <a href="https://youtu.be/uiQA9wBhGUg?si=GKXznvYokPJI49VM" target="_blank" rel="noopener noreferrer">
-
-    https://youtu.be/QWVI8CrPTXg?si=EgBxVQzkySeUIYfh
-
-   </a>
-
-  </li>
+ <li>
 
 
 
-  <li>
-
-   Ciaran Frayne. (n.d.). 
-
-   <em>Constructing a Laser Tripwire with Arduino.</em>
-
-   Ciaran Frayne. 
-
-   <a href="https://youtu.be/a_UiYOO-Sdw?si=loOoVs5R0kbj3NLm" target="_blank" rel="noopener noreferrer">
-
-    https://youtu.be/iN6MgaUf_Sg?si=Q2gsjCwmpJ7fbeRD
-
-   </a>
-
-  </li>
+  Nikki Griffz. (n.d.). 
 
 
 
-   
+  <em>DIY: Laser Tripwire Arduino Tutorial.</em> 
+
+
+
+  Nikki Griffz. 
+
+
+
+  <a href="https://youtu.be/uiQA9wBhGUg?si=GKXznvYokPJI49VM" target="_blank" rel="noopener noreferrer">
+
+
+
+  https://youtu.be/QWVI8CrPTXg?si=EgBxVQzkySeUIYfh
+
+
+
+  </a>
+
+
+
+ </li>
+
+
+
+
+
+
+
+ <li>
+
+
+
+  Ciaran Frayne. (n.d.). 
+
+
+
+  <em>Constructing a Laser Tripwire with Arduino.</em>
+
+
+
+  Ciaran Frayne. 
+
+
+
+  <a href="https://youtu.be/a_UiYOO-Sdw?si=loOoVs5R0kbj3NLm" target="_blank" rel="noopener noreferrer">
+
+
+
+  https://youtu.be/iN6MgaUf_Sg?si=Q2gsjCwmpJ7fbeRD
+
+
+
+  </a>
+
+
+
+ </li>
+
+
+
+
+
+
+
+  
+
+
 
  </ul>
+
+
 
 </section>
 
@@ -703,7 +1400,19 @@ void loop() {
 
 
 
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
 
 
 
